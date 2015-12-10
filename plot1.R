@@ -22,7 +22,7 @@ epcsubset <- filter(epcdata[epcdata$Date == "1/2/2007" | epcdata$Date == "2/2/20
 hist(epcsubset$Global_active_power,main = "Global Active Power",col = "red",xlab = "Global Active Power (kilowatts)")      
 
 ## Copy the histogram to a PNG file
-dev.copy(png,file = "plot1.png")   
+dev.copy(png,file = "plot1.png",width = 480, height = 480)   
 
 ## Close the PNG device
 dev.off()                                        
